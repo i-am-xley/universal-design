@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Slabo+13px&display=swap');
+
+body {
+     background-color: #58A69B;
+     font-family: 'Rubik', sans-serif;
+     font-size: 18 px;
+}
+
+p {
+    color: rgb(10, 10, 10);
+    line-height: 1.3em;
+}
+
+
+.container {
+max-width: 960px;
+margin: 0 auto; 
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Slabo', serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+h3 {
+    font-size: 1.2em;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}
