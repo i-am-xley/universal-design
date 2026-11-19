@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Slabo+13px&display=swap');
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #8C6BB4;
+  font-family: 'Newsreader', serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  padding: .2em 0;
+}
+
+p {
+  margin: 1.8em 0;
+  line-height: 1.8em;
+
+}
+
+h2 {font-size:1.25em;}
+
+header,
+nav,
+main,
+aside,
+footer {
+  padding: 1.5em;
+  border: 1px black solid;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #65C0CB;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns:
+   1fr       2fr       1fr;
+  grid-template-areas:
+  "head     head     head"
+  "nav     nav     nav"
+  "aside1    main     aside2"
+  "aside1    main     aside2"
+  "aside1    main     aside2"
+  "foot     foot     foot";
+}
+
+header {grid-area: head; background:#1D89E2;}
+nav {grid-area: nav; background:#FDB07D;}
+main {grid-area: main; background: #99C25F; max-height: 100%;}
+#aside1 {grid-area: aside1; background: #65C0CB;}
+#aside2 {grid-area: aside2; background: #99C25F;}
+footer {grid-area: foot; background: #FDB07D;}
+
+nav ul {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none
+}
+
+@media screen
+  and (min-width: 641px)
+  and (max-width: 900px)  {
+.container {
+grid-template-columns:
+   1fr 1fr;
+grid-template-areas:
+  "head head"
+  "nav nav"
+  "main main"
+  "aside1 aside2"
+  "foot foot";
+}
+}
+
+@media screen
+  and (max-width: 640px)  {
+.container {
+grid-template-columns:
+   1fr;
+grid-template-areas:
+  "head"
+  "main"
+  "aside1"
+  "aside2"
+  "nav"
+  "foot";
+}
+nav ul {
+  flex-flow: column nowrap;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 5px;
+  margin: 5px;
+  border: 1px black solid;
+  background: white;
+
+}
+}
