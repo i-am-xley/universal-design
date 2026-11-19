@@ -68,8 +68,8 @@ header {grid-area: head; background:#1D89E2;}
 nav {grid-area: nav; background:#FDB07D;}
 main {grid-area: main; background: #99C25F; max-height: 100%;}
 #aside1 {grid-area: aside1; background: #65C0CB;}
-#aside2 {grid-area: aside2; background: #99C25F;}
-footer {grid-area: foot; background: #FDB07D;}
+#aside2 {grid-area: aside2; background: #FDB07D;}
+footer {grid-area: foot; background: #99C25F;}
 
 nav ul {
 display: flex;
